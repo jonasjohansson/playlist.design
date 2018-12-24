@@ -6,12 +6,12 @@ for (let btn of btns) {
 		switch (btn.className) {
 			case 'increase':
 				var fontSize = getStyle(textarea, 'font-size');
-				fontSize *= 1.2;
+				fontSize *= 1.1;
 				textarea.style.fontSize = fontSize + 'px';
 				break;
 			case 'decrease':
 				var fontSize = getStyle(textarea, 'font-size');
-				fontSize *= 0.8;
+				fontSize *= 0.9;
 				textarea.style.fontSize = fontSize + 'px';
 				break;
 			case 'align-left':
