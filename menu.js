@@ -23,6 +23,21 @@ for (let btn of btns) {
 			case 'align-right':
 				cover.style.textAlign = 'right';
 				break;
+			case 'text-serif':
+				cover.setAttribute('data-font', 'serif');
+				break;
+			case 'text-sans-serif':
+				cover.setAttribute('data-font', 'sans-serif');
+				break;
+			case 'text-mono':
+				cover.setAttribute('data-font', 'mono');
+				break;
+			case 'reload':
+				draw();
+				break;
+			case 'color':
+				updateColors();
+				break;
 			case 'download':
 				let dataUrl = document.querySelector('canvas').toDataURL('image/png');
 				domtoimage
@@ -39,6 +54,16 @@ for (let btn of btns) {
 				break;
 		}
 	});
+}
+
+// textarea.addEventListener('keydown', autosize);
+
+function autosize() {
+	var el = this;
+	setTimeout(function() {
+		el.style.cssText = 'height:auto;padding:0';
+		el.style.cssText = 'height:' + el.scrollHeight + 'px';
+	}, 0);
 }
 
 function getStyle(el, prop) {
