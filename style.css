@@ -135,9 +135,9 @@ textarea {
 	transform: translateY(-50%);
 }
 
-textarea::placeholder {
+/*textarea::placeholder {
 	color: inherit;
-}
+}*/
 
 /* buttons */
 
