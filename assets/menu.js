@@ -13,14 +13,17 @@ for (let btn of btns) {
 			case 'random':
 				random();
 				break;
-			case 'font-small':
-				cover.setAttribute('data-size', 'small');
+			case 'font-s':
+				cover.setAttribute('data-size', 's');
 				break;
-			case 'font-medium':
-				cover.setAttribute('data-size', 'medium');
+			case 'font-m':
+				cover.setAttribute('data-size', 'm');
 				break;
-			case 'font-large':
-				cover.setAttribute('data-size', 'large');
+			case 'font-l':
+				cover.setAttribute('data-size', 'l');
+				break;
+			case 'font-xl':
+				cover.setAttribute('data-size', 'xl');
 				break;
 			case 'align-left':
 				cover.setAttribute('data-align', 'left');
@@ -34,6 +37,18 @@ for (let btn of btns) {
 			case 'font-sans-serif':
 				cover.setAttribute('data-font', 'sans-serif');
 				break;
+			case 'font-sans-serif-2':
+				cover.setAttribute('data-font', 'sans-serif-2');
+				break;
+			case 'font-sans-serif-3':
+				cover.setAttribute('data-font', 'sans-serif-3');
+				break;
+			case 'font-sans-serif-4':
+				cover.setAttribute('data-font', 'sans-serif-4');
+				break;
+			case 'font-sans-serif-5':
+				cover.setAttribute('data-font', 'sans-serif-5');
+				break;
 			case 'font-serif':
 				cover.setAttribute('data-font', 'serif');
 				break;
@@ -41,6 +56,8 @@ for (let btn of btns) {
 				cover.setAttribute('data-font', 'monospace');
 				break;
 		}
+		textarea.style.height = 'auto';
+		autosize(textarea);
 	});
 }
 

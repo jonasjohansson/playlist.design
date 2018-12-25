@@ -1,4 +1,6 @@
 @import url('https://rawgit.com/jonasjohansson/template/master/reset.css');
+@import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Poppins|Rubik');
 
 :root {
 	--base: 32px;
@@ -77,22 +79,42 @@ button:hover {
 	text-align: center;
 }
 
-#cover[data-size='small'] {
+#cover[data-size='s'] {
 	font-size: 40px;
 }
 
 #cover,
-#cover[data-size='medium'] {
+#cover[data-size='m'] {
 	font-size: 60px;
 }
 
-#cover[data-size='large'] {
+#cover[data-size='l'] {
 	font-size: 96px;
+}
+
+#cover[data-size='xl'] {
+	font-size: 192px;
 }
 
 #cover,
 #cover[data-font='sans-serif'] {
 	font-family: sans-serif;
+}
+
+#cover[data-font='sans-serif-2'] {
+	font-family: 'Cabin';
+}
+
+#cover[data-font='sans-serif-3'] {
+	font-family: 'Poppins';
+}
+
+#cover[data-font='sans-serif-4'] {
+	font-family: 'Rubik';
+}
+
+#cover[data-font='sans-serif-5'] {
+	font-family: 'Inter UI';
 }
 
 #cover[data-font='serif'] {
