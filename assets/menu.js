@@ -2,6 +2,8 @@ var btns = document.querySelectorAll('button');
 var cover = document.querySelector('#cover');
 var textarea = document.querySelector('textarea');
 
+autosize(textarea);
+
 for (let btn of btns) {
 	btn.addEventListener('click', e => {
 		switch (btn.className) {

@@ -8,7 +8,7 @@ ch = canvas.height;
 var colors = ['#fdd6d6', '#fab83e', '#eb6855', '#44a988', '#0295a8'];
 var palette = [];
 
-fetch('color_palettes.json')
+fetch('./assets/color_palettes.json')
 	.then(function(response) {
 		return response.json();
 	})
