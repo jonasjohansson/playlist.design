@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-	<title></title>
+	<title>Playlist Design</title>
 	<meta charset="UTF-8">
 	<!-- <script src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<script src="https://unpkg.com/dom-to-image@2.6.0/src/dom-to-image.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<main>
-		<menu>
-			<button class="increase">+</button>
-			<button class="decrease">-</button>
-			<button class="align-left"><</button>
-			<button class="align-center">|</button>
-			<button class="align-right">></button>
-			<button class="download">DL</button>
-			<button class="text-serif">s</button>
-			<button class="text-sans-serif">ss</button>
-			<button class="text-mono">m</button>
-			<button class="reload">r</button>
-			<button class="color">c</button>
-		</menu>
 		<div id="cover">
 			<div id="text">
 				<textarea class="main" placeholder="Unapologetically Replaceable"></textarea>
@@ -29,7 +17,29 @@
 			<!-- <canvas class="glslCanvas" data-fragment-url="shader.frag" width="500" height="500"></canvas> -->
 			<canvas width="600" height="600"></canvas>
 		</div>
-		<p>Check out <a href="https://replacecover.com/about">replacecover.com</a> for another take!</p>
+		<menu>
+			<div>
+				<button class="download"><i class="fas fa-download"></i></button>
+				<button class="random"><i class="fas fa-random"></i></button>
+			</div>
+			<div>
+				<button class="font-small">S</button>
+				<button class="font-medium">M</button>
+				<button class="font-large">L</button>
+			</div>
+			<div>
+				<button class="align-left"><i class="fas fa-align-left"></i></button>
+				<button class="align-center"><i class="fas fa-align-center"></i></button>
+				<button class="align-right"><i class="fas fa-align-right"></i></button>
+			</div>
+			<div>
+				<button class="font-sans-serif">Aa</button>
+				<button class="font-serif">Aa</button>
+				<button class="font-monospace">Aa</button>
+			</div>
+		</menu>
+		<br style="clear:left;">
+		<p>This is a remixed version of <a href="https://replacecover.com/about">replacecover.com</a> and made in a very short amount of time. It's purpose is to be a home for generative playlist and album covers and is likely to change heavily in the next weeks and months!</p>
 	</main>
 	<script type="text/javascript" src="karelmartens_01.js"></script>
 	<script type="text/javascript" src="menu.js"></script>

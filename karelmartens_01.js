@@ -6,24 +6,24 @@ cw = canvas.width;
 ch = canvas.height;
 
 var colors = ['#fdd6d6', '#fab83e', '#eb6855', '#44a988', '#0295a8'];
-var cols = [];
+var palette = [];
 
 fetch('color_palettes.json')
 	.then(function(response) {
 		return response.json();
 	})
 	.then(function(data) {
-		cols = data;
-		colors = data[getRand(0, data.length)];
-		draw();
+		palette = data;
+		random();
 	});
 
 var noise = document.createElement('div');
 noise.classList.add('noise');
 cover.appendChild(noise);
 
-function updateColors() {
-	colors = cols[getRand(0, cols.length)];
+function random() {
+	colors = palette[getRand(0, palette.length)];
+	colors[0] = '#000000';
 	draw();
 }
 
@@ -38,7 +38,7 @@ function draw() {
 	for (var i = 0; i < 2; i++) {
 		for (var j = 0; j < 3; j++) {
 			ctx.beginPath();
-			ctx.globalAlpha = getRand(8, 10) / 10;
+			ctx.globalAlpha = getRand(5, 10) / 10;
 			let x = (cw / 4) * (i + 1.5);
 			let y = ch / 2;
 			let rad = getRand(10, ch / 3);
