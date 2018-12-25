@@ -37,21 +37,6 @@ for (let btn of btns) {
 			case 'font-sans-serif':
 				cover.setAttribute('data-font', 'sans-serif');
 				break;
-			case 'font-sans-serif-2':
-				cover.setAttribute('data-font', 'sans-serif-2');
-				break;
-			case 'font-sans-serif-3':
-				cover.setAttribute('data-font', 'sans-serif-3');
-				break;
-			case 'font-sans-serif-4':
-				cover.setAttribute('data-font', 'sans-serif-4');
-				break;
-			case 'font-sans-serif-5':
-				cover.setAttribute('data-font', 'sans-serif-5');
-				break;
-			case 'font-serif':
-				cover.setAttribute('data-font', 'serif');
-				break;
 			case 'font-monospace':
 				cover.setAttribute('data-font', 'monospace');
 				break;

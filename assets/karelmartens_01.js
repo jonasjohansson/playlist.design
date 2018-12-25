@@ -23,7 +23,7 @@ cover.appendChild(noise);
 
 function random() {
 	colors = palette[getRand(0, palette.length)];
-	colors[0] = '#000000';
+	// colors[0] = '#000000';
 	draw();
 }
 
